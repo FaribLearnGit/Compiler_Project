@@ -1,0 +1,20 @@
+eleven seed := 9.
+
+Start_UpsideDown fob fcb {
+    eleven x := 10.
+    eleven y := 20.
+    x := x add y.
+
+    shout fob "Computation complete" fcb.
+    shout fob 5 add 6 mul 2 fcb.
+
+    hawkins fob x > 10 fcb {
+        shout fob "Condition parsed" fcb.
+    }
+
+    watch fob x < 100 fcb {
+        shout fob "Loop body parsed" fcb.
+    }
+
+    back x.
+}

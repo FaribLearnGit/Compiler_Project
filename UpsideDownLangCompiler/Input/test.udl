@@ -1,0 +1,22 @@
+eleven globalValue := 5.
+
+Start_UpsideDown fob fcb {
+    eleven x := 10.
+    eleven y := 20.
+    x := x add y.
+    shout fob "Sum calculated" fcb.
+
+    hawkins fob x > 10 fcb {
+        shout fob "x is greater than 10" fcb.
+    }
+
+    watch fob x < 40 fcb {
+        x := x add 5.
+    }
+
+    portalLoop fob x := 0 : x < 3 : x := x add 1 fcb {
+        
+    }
+
+    back x.
+}

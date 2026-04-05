@@ -1,0 +1,6 @@
+Start_UpsideDown fob fcb {
+    shout fob 10 add 5 fcb.
+    shout fob 20 minus 8 fcb.
+    shout fob 6 mul 7 fcb.
+    shout fob 20 divide 4 fcb.
+}

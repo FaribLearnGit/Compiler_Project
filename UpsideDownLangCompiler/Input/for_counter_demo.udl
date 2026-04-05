@@ -1,0 +1,7 @@
+Start_UpsideDown fob fcb {
+    eleven i := 0.
+
+    portalLoop fob i := 0 : i < 3 : i := i add 1 fcb {
+        shout fob i fcb.
+    }
+}

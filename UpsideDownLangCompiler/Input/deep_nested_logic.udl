@@ -1,0 +1,17 @@
+Start_UpsideDown fob fcb {
+    eleven x := 1.
+    eleven y := 0.
+
+    watch fob x <= 5 fcb {
+        hawkins fob x < 3 fcb {
+            y := y add x.
+            shout fob y fcb.
+        }
+        downside {
+            portalLoop fob y := y : y < 10 : y := y add 2 fcb {
+                shout fob y fcb.
+            }
+        }
+        x := x add 1.
+    }
+}

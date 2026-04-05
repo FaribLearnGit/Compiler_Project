@@ -1,0 +1,10 @@
+Start_UpsideDown fob fcb {
+    eleven i.
+    eleven j.
+
+    portalLoop fob i := 0 : i < 2 : i := i add 1 fcb {
+        portalLoop fob j := 0 : j < 2 : j := j add 1 fcb {
+            shout fob "Nested loop parsed successfully" fcb.
+        }
+    }
+}

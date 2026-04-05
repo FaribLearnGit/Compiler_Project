@@ -1,0 +1,8 @@
+Start_UpsideDown fob fcb {
+    eleven x := 1.
+
+    watch fob x <= 10 fcb {
+        shout fob x fcb.
+        x := x add 1.
+    }
+}
