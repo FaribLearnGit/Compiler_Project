@@ -13,9 +13,14 @@ This is a minimal FLEX + BISON compiler project based on your proposal PDF for *
 ## Build
 
 ```bash
+cd /d C:\Users\sadid\Desktop\Compiler\UpsideDownLangCompiler
+set BISON_PKGDATADIR=C:\Progra~2\GnuWin32\share\bison
 bison -d parser.y
 flex lexer.l
-gcc -o compiler lex.yy.c parser.tab.c -lfl
+gcc parser.tab.c lex.yy.c -o compiler.exe
+
+compiler.exe count_to_ten.udl
+type output.txt
 ```
 
 Or simply:
